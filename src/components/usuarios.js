@@ -4,12 +4,16 @@ import { connect } from 'react-redux'
 export class Usuarios extends Component {
   render() {
     return (
-      <div>usuarios</div>
+      <div>
+        <h2>Usuario: {this.props.usuarios.active}</h2>
+      </div>
     )
   }
 }
 
-const mapStateToProps = (state) => ({})
+const mapStateToProps = (state) => ({
+    usuarios: state.usuariosReducer
+})
 
 const mapDispatchToProps = {}
 
