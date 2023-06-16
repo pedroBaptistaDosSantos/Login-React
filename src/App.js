@@ -7,6 +7,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
 import Routes from './routes'
+
+import './css/dashboard.css'
 const theme = createTheme({
   palette: {
     primary: {
