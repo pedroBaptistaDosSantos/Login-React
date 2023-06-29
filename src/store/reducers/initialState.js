@@ -1,3 +1,5 @@
+import { success } from "../actions/register.action";
+
 export default {
     auth: {
         token: {},
@@ -11,5 +13,14 @@ export default {
         },
         success: false,
         error: null
+    },
+    register: {
+        data: {
+            username: '',
+            email: '',
+            password: ''
+        },
+        error: {},
+        success: false
     }
 }
